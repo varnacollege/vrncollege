@@ -33,7 +33,7 @@ img { max-width: 100%; display: block; }
 button, input { font: inherit; }
 
 .wrap {
-  width: min(1180px, calc(100% - 2.5rem));
+  width: min(1320px, calc(100% - 3rem));
   margin-inline: auto;
 }
 
@@ -104,8 +104,8 @@ button, input { font: inherit; }
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr);
-  gap: 1.5rem 2.5rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+  gap: 2rem 3rem;
   align-items: center;
 }
 
@@ -122,19 +122,20 @@ button, input { font: inherit; }
 }
 
 .hero h1 {
-  margin: 0 0 1rem;
+  margin: 0 0 1.1rem;
   font-family: var(--serif);
-  font-size: clamp(1.7rem, 3.4vw, 2.55rem);
-  line-height: 1.25;
+  font-size: clamp(1.85rem, 3.6vw, 2.85rem);
+  line-height: 1.28;
   color: var(--green-deep);
-  max-width: 28ch;
+  max-width: 38ch;
 }
 
 .hero__lead {
   margin: 0 0 1.5rem;
   color: var(--muted);
-  font-size: 1.02rem;
-  max-width: 52ch;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  max-width: 62ch;
 }
 
 .hero__visual {
@@ -145,7 +146,7 @@ button, input { font: inherit; }
 }
 
 .hero__book {
-  width: min(100%, 480px);
+  width: min(100%, 460px);
   height: auto;
   filter: drop-shadow(0 24px 36px rgba(15, 36, 24, 0.24));
 }
@@ -155,9 +156,9 @@ button, input { font: inherit; }
   background: var(--white);
   border: 1px solid #e8e1d4;
   border-radius: 14px;
-  padding: 1.5rem 1.55rem 1.25rem;
+  padding: 1.55rem 1.75rem 1.3rem;
   box-shadow: 0 16px 40px rgba(22, 53, 36, 0.08);
-  max-width: 560px;
+  max-width: 640px;
   width: 100%;
 }
 
@@ -477,7 +478,7 @@ button, input { font: inherit; }
   gap: 1.75rem 2.25rem;
   align-items: center;
   width: 100%;
-  max-width: 920px;
+  max-width: 980px;
 }
 
 .course__banner {
@@ -507,7 +508,7 @@ button, input { font: inherit; }
   font-size: clamp(1.55rem, 2.8vw, 2.15rem);
   line-height: 1.25;
   font-weight: 700;
-  max-width: 22ch;
+  max-width: 28ch;
 }
 
 .course__copy h2::after {
@@ -524,7 +525,7 @@ button, input { font: inherit; }
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   line-height: 1.55;
-  max-width: 54ch;
+  max-width: 58ch;
 }
 
 .course__list {
