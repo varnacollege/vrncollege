@@ -93,6 +93,12 @@ button, input { font: inherit; }
   isolation: isolate;
 }
 
+.hero > .wrap {
+  width: min(1400px, calc(100% - 1.5rem));
+  margin-left: clamp(0.75rem, 2.2vw, 1.75rem);
+  margin-right: auto;
+}
+
 .hero__bg {
   position: absolute;
   inset: 0 0 0 48%;
@@ -104,8 +110,8 @@ button, input { font: inherit; }
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
-  gap: 2rem 3rem;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+  gap: 2rem 2.5rem;
   align-items: center;
 }
 
@@ -619,6 +625,11 @@ button, input { font: inherit; }
   .hero__grid,
   .final-cta__grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero > .wrap {
+    width: min(100% - 1.5rem, 1400px);
+    margin-inline: auto;
   }
 
   .course {
