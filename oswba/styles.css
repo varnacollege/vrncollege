@@ -97,10 +97,10 @@ h3 {
 .cta--hero {
   color: #111;
   background: #ff7a18;
-  padding: 1.05rem 1.7rem;
-  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  padding: 1.1rem 1.85rem;
+  font-size: clamp(0.98rem, 1.45vw, 1.18rem);
   border-radius: 14px;
-  width: min(100%, 420px);
+  width: min(100%, 460px);
 }
 
 .cta--hero .cta__arrow {
@@ -142,7 +142,7 @@ h3 {
 
 .hero > .wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1480px;
   height: 100%;
 }
 
@@ -206,14 +206,14 @@ h3 {
 .hero h1 {
   margin: 0 0 1rem;
   font-weight: 800;
-  font-size: clamp(1.15rem, 2.05vw, 1.7rem);
+  font-size: clamp(1.25rem, 2.2vw, 2.05rem);
   line-height: 1.22;
   letter-spacing: -0.025em;
 }
 
 .hero__title-lead {
   display: block;
-  font-size: clamp(2.75rem, 6.5vw, 4.5rem);
+  font-size: clamp(2.9rem, 6.8vw, 5.25rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
   margin-bottom: 0.35rem;
@@ -262,9 +262,9 @@ h3 {
 
 .hero__lead {
   margin: 0 0 1rem;
-  max-width: 38ch;
+  max-width: 42ch;
   color: #d7d0ef;
-  font-size: 1.02rem;
+  font-size: clamp(1.02rem, 1.35vw, 1.2rem);
 }
 
 .meta-box {
@@ -272,7 +272,7 @@ h3 {
   grid-template-columns: 1.15fr 0.85fr;
   gap: 0.75rem;
   margin-bottom: 1.1rem;
-  max-width: 480px;
+  max-width: 520px;
   background: rgba(8, 4, 24, 0.55);
   border: 1.5px solid rgba(155, 123, 255, 0.55);
   border-radius: 14px;
@@ -366,8 +366,8 @@ h3 {
   left: 2%;
   bottom: 7%;
   z-index: 2;
-  width: clamp(148px, 17vw, 200px);
-  height: clamp(195px, 23vw, 265px);
+  width: clamp(160px, 18vw, 240px);
+  height: clamp(210px, 24vw, 320px);
   transform: rotate(-9deg) perspective(600px) rotateY(12deg);
   transform-style: preserve-3d;
   filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.55));
@@ -1131,6 +1131,56 @@ body.modal-open {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Large desktop — fill big monitors more like a laptop fills its screen */
+@media (min-width: 1400px) {
+  .hero {
+    padding: 2.25rem clamp(2rem, 5vw, 4.5rem);
+  }
+
+  .hero__grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+    gap: 1.25rem 1.5rem;
+  }
+
+  .badge {
+    font-size: 0.88rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .pillars li {
+    font-size: 0.8rem;
+  }
+
+  .hero-crew {
+    transform: scale(1.06);
+    transform-origin: right bottom;
+  }
+}
+
+@media (min-width: 1700px) {
+  .hero > .wrap {
+    max-width: 1640px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero__title-lead {
+    font-size: 5.75rem;
+  }
+
+  .hero-crew {
+    transform: scale(1.1);
+    transform-origin: right bottom;
+  }
+
+  .guide-book {
+    width: 260px;
+    height: 345px;
+  }
 }
 
 /* RESPONSIVE */
