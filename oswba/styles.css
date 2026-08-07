@@ -350,15 +350,9 @@ h3 {
   width: auto;
   max-width: none;
   object-fit: contain;
-  object-position: right center;
-  -webkit-mask-image:
-    linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%);
-  mask-image:
-    linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, #000 10%, #000 90%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-composite: intersect;
+  object-position: right top;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 100%);
 }
 
 .guide-book {
@@ -1152,11 +1146,6 @@ body.modal-open {
   .pillars li {
     font-size: 0.8rem;
   }
-
-  .hero-crew {
-    transform: scale(1.06);
-    transform-origin: right bottom;
-  }
 }
 
 @media (min-width: 1700px) {
@@ -1170,11 +1159,6 @@ body.modal-open {
 
   .hero__title-lead {
     font-size: 5.75rem;
-  }
-
-  .hero-crew {
-    transform: scale(1.1);
-    transform-origin: right bottom;
   }
 
   .guide-book {
